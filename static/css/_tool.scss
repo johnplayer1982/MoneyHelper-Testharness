@@ -40,3 +40,11 @@
 .tool_end {
     border-top: 2px dashed $purple;
 }
+
+.tool_container__resize {
+    display: none;
+
+    @media (min-width: $breakpoint-desktop) {
+        display: block;
+    }
+}

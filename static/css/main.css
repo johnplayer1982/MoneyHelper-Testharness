@@ -138,4 +138,10 @@ p.no-margin {
 .tool_end {
   border-top: 2px dashed #8200D1; }
 
+.tool_container__resize {
+  display: none; }
+  @media (min-width: 1024px) {
+    .tool_container__resize {
+      display: block; } }
+
 /*# sourceMappingURL=main.css.map */
