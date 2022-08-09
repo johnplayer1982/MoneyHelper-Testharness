@@ -7,12 +7,7 @@ from .models import Tool
 
 class HomeView(TemplateView):
     def get(self, request):
-        template = 'templates/shared/index.html'
-        return render(request, template, {})
-
-class StampDutyView(TemplateView):
-    def get(self, request):
-        template = 'tools/stamp_duty.html'
+        template = 'index.html'
         return render(request, template, {})
 
 class ToolList(ListView):
