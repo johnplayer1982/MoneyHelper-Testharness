@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wfm4h798ho2=j=vnh$=!#(a5!j02tyr5ss5kn-l53q9kgz-*3%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["moneyhelper-testharness.herokuapp.com"]
+ALLOWED_HOSTS = ["moneyhelper-testharness.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'webapp.urls'
@@ -128,6 +129,8 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 SASS_PROCESSOR_ROOT = STATIC_ROOT
 
 
