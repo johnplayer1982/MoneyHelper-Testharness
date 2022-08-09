@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wfm4h798ho2=j=vnh$=!#(a5!j02tyr5ss5kn-l53q9kgz-*3%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["moneyhelper-testharness.herokuapp.com"]
 
 
 # Application definition
