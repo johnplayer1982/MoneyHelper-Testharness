@@ -1,16 +1,20 @@
 {% extends "base.html" %}
 {% block title %}{% endblock %}
 {% block content %}
-<ul>
-    {% for object in object_list %}
-    <li>
-        <a href="tools/{{ object.slug }}">{{ object.tool_title }}</a>
-    </li>
+    <div class="row">
+        {% for object in object_list %}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ object.tool_title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ object.tool_iframe_url }}</h6>
+                    <a href="tools/{{ object.slug }}" class="btn btn-primary">Visit tool</a>
+                </div>
+            </div>
+        </div>
     <!-- If object_list is empty  -->
     {% empty %}
-    <li>None added</li>
-
+    None added
     {% endfor %}
-</ul>
-
+    </div>
 {% endblock %}
