@@ -7,7 +7,7 @@ from .models import Tool
 
 class HomeView(TemplateView):
     def get(self, request):
-        template = 'shared/index.html'
+        template = '/templates/shared/index.html'
         return render(request, template, {})
 
 class StampDutyView(TemplateView):
