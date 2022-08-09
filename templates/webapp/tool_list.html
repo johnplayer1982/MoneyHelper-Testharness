@@ -4,7 +4,7 @@
 <ul>
     {% for object in object_list %}
     <li>
-        <a href="{{ object.slug }}">{{ object.tool_title }}</a>
+        <a href="tools/{{ object.slug }}">{{ object.tool_title }}</a>
     </li>
     <!-- If object_list is empty  -->
     {% empty %}

@@ -20,7 +20,7 @@ from .views import HomeView, ToolDetail, ToolList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HomeView.as_view(), name="Home"),
-    path('tools/', ToolList.as_view(), name="tools"),
+    path('', ToolList.as_view(), name="Home"),
+    # path('tools/', ToolList.as_view(), name="tools"),
     path('tools/<slug:slug>', ToolDetail.as_view()),
 ]
