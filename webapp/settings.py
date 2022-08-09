@@ -57,7 +57,7 @@ ROOT_URLCONF = 'webapp.urls'
 
 TEMPLATES = [
     {
-        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -130,7 +130,6 @@ STATICFILES_FINDERS = [
 ]
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 SASS_PROCESSOR_ROOT = STATIC_ROOT
 
 
