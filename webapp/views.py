@@ -5,11 +5,6 @@ from django.views.generic.detail import DetailView
 
 from .models import Tool
 
-class HomeView(TemplateView):
-    def get(self, request):
-        template = 'index.html'
-        return render(request, template, {})
-
 class ToolList(ListView):
     model = Tool
 
