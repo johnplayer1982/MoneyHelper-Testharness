@@ -93,7 +93,8 @@ p.no-margin {
       margin: 0 auto;
       max-width: 100%; } }
 .navigation {
-  background-color: #f3f1f3; }
+  background-color: #fff;
+  border-bottom: 1px solid #9da1ca; }
   .navigation .navbar {
     padding: 10px 20px;
     background-color: transparent !important; }
@@ -101,6 +102,9 @@ p.no-margin {
       .navigation .navbar {
         max-width: 85%;
         margin: 0 auto; } }
+    .navigation .navbar .navbar-brand__logo {
+      width: 120px; }
+
 .tool_embed iframe {
   width: 100%; }
 

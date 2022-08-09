@@ -1,5 +1,6 @@
 .navigation {
-    background-color: $lightgrey;
+    background-color: $white;
+    border-bottom: 1px solid $grey;
 
     .navbar {
         padding: $baseline-unit $baseline-unit*2;
@@ -8,6 +9,10 @@
         @media (min-width: $breakpoint-desktop) {
             max-width: 85%;
             margin: 0 auto;
+        }
+
+        .navbar-brand__logo {
+            width: 120px;
         }
     }
 
