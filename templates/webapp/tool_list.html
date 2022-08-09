@@ -6,15 +6,16 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{ object.tool_title }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ object.tool_iframe_url }}</h6>
-                    <a href="tools/{{ object.slug }}" class="btn btn-primary">Visit tool</a>
+                  <h5 class="card-title">{{ object.tool_title }}</h5>
+                  <p class="card-text">{{ object.tool_iframe_url }}</p>
+                  <a href="tools/{{ object.slug }}" class="btn btn-primary">Visit tool</a>
                 </div>
             </div>
+            <p>&nbsp;</p>
         </div>
-    <!-- If object_list is empty  -->
-    {% empty %}
-    None added
-    {% endfor %}
+        <!-- If object_list is empty  -->
+        {% empty %}
+        None added
+        {% endfor %}
     </div>
 {% endblock %}

@@ -1,5 +1,42 @@
 .tool_embed {
+    padding: $baseline-unit*2 0;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: $baseline-unit*2;
+    }
+
     iframe {
         width: 100%;
     }    
+}
+
+.tool_summary {
+    padding: $baseline-unit;
+    background-color: $lightgrey;
+    border-radius: $border-radius;
+    border: 1px solid $grey;
+    margin-bottom: $baseline-unit*2;
+
+    ul {
+        margin: 0 0 $baseline-unit*2 0;
+        padding: 0 0 0 $baseline-unit*2;
+    }
+}
+
+.tool_start,
+.tool_end {
+    text-align: center;
+    font-weight: bold;
+    color: $dark;
+    padding: $baseline-unit;
+    background-color: $lightgrey;
+    text-transform: uppercase;
+}
+
+.tool_start {
+    border-bottom: 2px dashed $purple;
+}
+
+.tool_end {
+    border-top: 2px dashed $purple;
 }

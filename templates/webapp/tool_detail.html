@@ -7,8 +7,78 @@
         <li class="breadcrumb-item active" aria-current="page">{{ object.tool_title }}</li>
     </ol>
 </nav>
-<h1>{{ object.tool_title }}</h1>
+
+<div class="tool_summary">
+    <ul>
+        <li>
+            <strong>Tool:</strong> {{ object.tool_title }}
+        </li>
+        <li>
+            <strong>Embed URL:</strong> <a href="{{ object.tool_iframe_url }}" target="_blank">{{ object.tool_iframe_url }}</a>
+        </li>
+    </ul>
+    <p><strong>Resize tool container:</strong></p>
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary" id="very_small"><i class="fa-solid fa-mobile-retro"></i> very small</a>
+        <a href="#" class="btn btn-primary" id="small"><i class="fa-solid fa-mobile-screen"></i> small</a>
+        <a href="#" class="btn btn-primary" id="medium"><i class="fa-solid fa-tablet-screen-button"></i> medium</a>
+        <a href="#" class="btn btn-primary" id="large"><i class="fa-solid fa-laptop"></i> large</a>
+        <a href="#" class="btn btn-primary" id="extra_large"><i class="fa-solid fa-tv"></i> extra large</a>
+        <a href="#" class="btn btn-primary" id="full_width"><i class="fa-solid fa-text-width"></i> 100% of container</a>
+    </div>
+</div>
+
+<div class="tool_start">
+    <i class="fa-solid fa-angle-down"></i> Synicated tool start <i class="fa-solid fa-angle-down"></i>
+</div>
+
 <div class="tool_embed">
     <iframe src="{{ object.tool_iframe_url }}" width="100%" height="500px" frameborder="0"></iframe>
 </div>
+
+<div class="tool_end">
+    <i class="fa-solid fa-angle-up"></i> Synicated tool end <i class="fa-solid fa-angle-up"></i>
+</div>
+
+<script>
+    toolembed = document.getElementsByClassName("tool_embed")[0]
+
+    very_small = "320px"
+    small = "481px"
+    medium = "769px"
+    large = "1025px"
+    extra_large = "1500px"
+    full_width = "100%"
+
+    very_small_btn = document.getElementById("very_small")
+    very_small_btn.onclick = function(){
+        toolembed.style.width = very_small;
+    };
+
+    small_btn = document.getElementById("small")
+    small_btn.onclick = function(){
+        toolembed.style.width = small;
+    };
+
+    medium_btn = document.getElementById("medium")
+    medium_btn.onclick = function(){
+        toolembed.style.width = medium;
+    };
+
+    large_btn = document.getElementById("large")
+    large_btn.onclick = function(){
+        toolembed.style.width = large;
+    };
+
+    extra_large_btn = document.getElementById("extra_large")
+    extra_large_btn.onclick = function(){
+        toolembed.style.width = extra_large;
+    };
+
+    full_width_btn = document.getElementById("full_width")
+    full_width_btn.onclick = function(){
+        toolembed.style.width = full_width;
+    };
+</script>
+
 {% endblock %}

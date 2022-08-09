@@ -105,7 +105,37 @@ p.no-margin {
     .navigation .navbar .navbar-brand__logo {
       width: 120px; }
 
-.tool_embed iframe {
-  width: 100%; }
+.tool_embed {
+  padding: 20px 0; }
+  @media (min-width: 1024px) {
+    .tool_embed {
+      padding: 20px; } }
+  .tool_embed iframe {
+    width: 100%; }
+
+.tool_summary {
+  padding: 10px;
+  background-color: #f3f1f3;
+  border-radius: 4px;
+  border: 1px solid #9da1ca;
+  margin-bottom: 20px; }
+  .tool_summary ul {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 20px; }
+
+.tool_start,
+.tool_end {
+  text-align: center;
+  font-weight: bold;
+  color: #000b3b;
+  padding: 10px;
+  background-color: #f3f1f3;
+  text-transform: uppercase; }
+
+.tool_start {
+  border-bottom: 2px dashed #8200D1; }
+
+.tool_end {
+  border-top: 2px dashed #8200D1; }
 
 /*# sourceMappingURL=main.css.map */
