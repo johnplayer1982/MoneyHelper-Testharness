@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+
+html,
+body {
+  font-family: 'Roboto';
+  font-size: 14px; }
+
+h2.subheading,
+h3,
+h4,
+h5 {
+  color: #000b3b; }
+
+h1,
+h2 {
+  color: #0f19a0; }
+
+h1 {
+  padding: 20px 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 48px;
+      line-height: 54px; } }
+h2.subheading {
+  font-size: 30px;
+  line-height: 37px; }
+  @media (min-width: 768px) {
+    h2.subheading {
+      font-size: 42px;
+      line-height: 48px; } }
+h2 {
+  font-size: 28px;
+  line-height: 36px; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 38px;
+      line-height: 43px; } }
+h3 {
+  font-size: 25px;
+  line-height: 33px; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 32px;
+      line-height: 39px; } }
+h4 {
+  font-size: 23px;
+  line-height: 31px; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 27px;
+      line-height: 34px; } }
+h5 {
+  font-size: 20px;
+  line-height: 25px; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 22px;
+      line-height: 28px; } }
+a {
+  color: #c82a87; }
+  a:hover {
+    color: #9c0052; }
+  a:visited {
+    color: #8200D1; }
+  a:active, a:focus {
+    background-color: #f0f05a;
+    color: #000b3b;
+    border-bottom: 4px solid #8200D1;
+    outline: none;
+    text-decoration: none; }
+
+p.small {
+  font-size: 0.8rem; }
+
+p.no-margin {
+  margin: 0 !important; }
+
+.pink {
+  color: #c82a87; }
+
+.blue {
+  color: #0f19a0; }
+
+.container {
+  padding: 20px; }
+  @media (min-width: 1024px) {
+    .container {
+      width: 85%;
+      margin: 0 auto;
+      max-width: 100%; } }
+.navigation {
+  background-color: #f3f1f3; }
+  .navigation .navbar {
+    padding: 10px 20px;
+    background-color: transparent !important; }
+    @media (min-width: 1024px) {
+      .navigation .navbar {
+        max-width: 85%;
+        margin: 0 auto; } }
+.tool_embed iframe {
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

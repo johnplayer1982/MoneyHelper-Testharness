@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+<ul>
+    {% for object in object_list %}
+    <li>
+        <a href="{{ object.slug }}">{{ object.tool_title }}</a>
+    </li>
+    <!-- If object_list is empty  -->
+    {% empty %}
+    <li>None added</li>
+
+    {% endfor %}
+</ul>
+
+{% endblock %}

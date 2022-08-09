@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+         url('../fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+html,
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+h2.subheading,
+h3,
+h4,
+h5 {
+    color: $dark;
+}
+
+h1,
+h2 {
+    color: $blue;
+}
+
+h1 {
+    padding: $baseline-unit*2 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 48px;
+        line-height: 54px;
+    }
+}
+
+h2.subheading {
+    font-size: 30px;
+    line-height: 37px;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 36px;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 38px;
+        line-height: 43px;
+    }
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 33px;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 32px;
+        line-height: 39px;
+    }
+}
+
+h4 {
+    font-size: 23px;
+    line-height: 31px;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 27px;
+        line-height: 34px;
+    }
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 25px;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+a {
+    color: $pink;
+
+    &:hover {
+        color: $darkpink;
+    }
+
+    &:visited {
+        color: $purple;
+    }
+
+    &:active,
+    &:focus {
+        background-color: $yellow;
+        color: $dark;
+        border-bottom: 4px solid $purple;
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+p.small {
+    font-size: 0.8rem;
+}
+
+p.no-margin {
+    margin: 0 !important;
+}
+
+.pink {
+    color: $pink;
+}
+
+.blue {
+    color: $blue;
+}
