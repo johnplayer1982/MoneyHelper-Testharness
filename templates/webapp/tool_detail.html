@@ -16,7 +16,17 @@
         <li>
             <strong>Embed URL:</strong> <a href="{{ object.tool_iframe_url }}" target="_blank">{{ object.tool_iframe_url }}</a>
         </li>
+        
+        <li>
+            {% if object.tool_supporting_script_source %}
+            <strong>Supporting script src:</strong> {{ object.tool_supporting_script_source }}
+            {% else %}
+            <strong>Supporting script src:</strong> Not defined
+            {% endif %}
+        </li>
+        
     </ul>
+
     <div class="tool_container__resize">
         <p><strong>Resize tool container:</strong></p>
         <div class="btn-group">
@@ -82,5 +92,9 @@
         toolembed.style.width = full_width;
     };
 </script>
+
+{% if object.tool_supporting_script_source %}
+    <script src="{{ object.tool_supporting_script_source }}"></script>
+{% endif %}
 
 {% endblock %}

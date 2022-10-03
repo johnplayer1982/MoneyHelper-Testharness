@@ -9,4 +9,5 @@ class ToolAdmin(admin.ModelAdmin):
         'slug',
         'tool_title',
         'tool_iframe_url',
+        'tool_supporting_script_source'
     )
